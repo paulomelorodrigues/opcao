@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>document.documentElement.className+=" js";</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos — Opção Supermercado</title>
+  <meta name="description" content="Veja os produtos do Opção Supermercado: hortifruti, açougue, mercearia, bebidas e limpeza. Monte seu carrinho e peça pelo WhatsApp.">
+  <meta property="og:title" content="Produtos — Opção Supermercado">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1b4db3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <div class="aviso-topo"></div>
+
+  <header class="site-header">
+    <div class="wrap topbar">
+      <a class="brand" href="index.html"><span class="logo"><img src="assets/img/logo.png" alt="" width="36" height="36"></span> Opção Supermercado</a>
+      <form class="busca-header" action="produtos.html" method="get" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" name="busca" placeholder="O que você procura hoje?" aria-label="Buscar produto">
+        <button type="submit">Buscar</button>
+      </form>
+      <a class="cart-btn" href="#" data-abrir-carrinho>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.2l2.3 12.3a1.6 1.6 0 0 0 1.6 1.3h8.7a1.6 1.6 0 0 0 1.6-1.2L21.5 7H5.3"/></svg>
+        <span class="rotulo-cart">Carrinho</span>
+        <span class="badge" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="produtos.html" class="active">Produtos</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+      <a href="contato.html">Contato</a>
+      <a href="index.html#receber-ofertas" class="nav-cta">Receber ofertas 🔔</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <span class="kicker">Nosso catálogo</span>
+    <h1>Produtos</h1>
+    <p>Escolha o que precisa, toque em “+ Adicionar” e finalize pelo WhatsApp.</p>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="busca-barra">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" data-busca-produtos placeholder="Buscar produto (ex.: arroz, tomate, café)…" aria-label="Buscar produto">
+      </div>
+      <div class="chips-categoria" data-chips-categoria></div>
+
+      <div style="margin-top:34px;" data-produtos-grid>
+        <p class="lead">Carregando produtos…</p>
+      </div>
+
+      <div class="carrinho-nota" style="max-width:640px;margin:34px auto 0;">
+        Não encontrou o que procura? A gente tem muito mais na loja!
+        <a href="#" data-config-link="whatsapp" rel="noopener" target="_blank">Chame no WhatsApp</a> e peça direto.
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="index.html"><span class="logo"><img src="assets/img/logo.png" alt="" width="21" height="21"></span> Opção Supermercado</a>
+          <p><span data-config="endereco">Avenida Frei Estevão, 567 — Bairro Cidade Nova</span></p>
+          <p>WhatsApp: <a href="#" data-config-link="whatsapp" rel="noopener" target="_blank">(38) 99944-6404</a></p>
+        </div>
+        <div>
+          <h5>Navegue</h5>
+          <ul>
+            <li><a href="ofertas.html">Ofertas da semana</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Fale com a gente</h5>
+          <ul>
+            <li><a href="#" data-config-link="whatsapp" rel="noopener" target="_blank">WhatsApp</a></li>
+            <li><a href="#" data-config-link="instagram" rel="noopener" target="_blank">Instagram</a></li>
+            <li><a href="#" data-config-link="facebook" rel="noopener" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="alerta-golpe">
+        ⚠️ <strong>Cuidado com golpes:</strong> nosso único WhatsApp oficial é o <a href="#" data-config-link="whatsapp" rel="noopener" target="_blank">(38) 99944-6404</a>. Nunca pedimos pagamento por outros números ou links estranhos.
+      </div>
+      <div class="legal">
+        © <span id="year"></span> Opção Supermercado — Cidade Nova.
+        <div class="disclaimer">A venda de bebidas alcoólicas é proibida para menores de 18 anos.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/conteudo-padrao.js?v=2"></script>
+  <script src="assets/js/conteudo.js?v=2"></script>
+  <script src="assets/js/produtos.js?v=2"></script>
+  <script src="assets/js/carrinho.js?v=2"></script>
+</body>
+</html>

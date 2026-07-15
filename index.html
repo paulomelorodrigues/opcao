@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>document.documentElement.className+=" js";</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opção Supermercado — Ofertas e entrega em Cidade Nova</title>
+  <meta name="description" content="Opção Supermercado: ofertas da semana, açougue, hortifruti e mercearia com entrega. Faça seu pedido pelo WhatsApp. Av. Frei Estevão, 567 — Cidade Nova.">
+  <meta property="og:title" content="Opção Supermercado — Ofertas e entrega">
+  <meta property="og:description" content="Ofertas da semana, açougue e hortifruti com entrega. Peça pelo WhatsApp!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/logo.png">
+  <meta name="theme-color" content="#1b4db3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "name": "Opção Supermercado",
+    "image": "assets/img/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Frei Estevão, 567",
+      "addressLocality": "Bairro Cidade Nova",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5538999446404",
+    "openingHours": "Mo-Su 07:00-20:00",
+    "paymentAccepted": "Dinheiro, PIX, Cartão de crédito, Cartão de débito, Cartão alimentação",
+    "priceRange": "$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Faixa opcional de aviso (Configurações → "Aviso topo") -->
+  <div class="aviso-topo"></div>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="site-header">
+    <div class="wrap topbar">
+      <a class="brand" href="index.html"><span class="logo"><img src="assets/img/logo.png" alt="" width="36" height="36"></span> Opção Supermercado</a>
+      <form class="busca-header" action="produtos.html" method="get" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" name="busca" placeholder="O que você procura hoje?" aria-label="Buscar produto">
+        <button type="submit">Buscar</button>
+      </form>
+      <a class="cart-btn" href="#" data-abrir-carrinho>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.2l2.3 12.3a1.6 1.6 0 0 0 1.6 1.3h8.7a1.6 1.6 0 0 0 1.6-1.2L21.5 7H5.3"/></svg>
+        <span class="rotulo-cart">Carrinho</span>
+        <span class="badge" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="active">Início</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+      <a href="contato.html">Contato</a>
+      <a href="index.html#receber-ofertas" class="nav-cta">Receber ofertas 🔔</a>
+    </nav>
+  </header>
+
+  <!-- ================= BANNER DE OFERTAS (carrossel) ================= -->
+  <div class="banner-wrap">
+    <div data-banner-ofertas aria-label="Ofertas da semana"></div>
+  </div>
+
+  <!-- ================= OFERTAS DE HOJE (produtos direto na home) ============ -->
+  <section class="section tight" id="ofertas-hoje">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-bottom:26px;">
+        <span class="eyebrow">Preço baixo de verdade</span>
+        <h2 class="section-title">Ofertas de hoje</h2>
+      </div>
+      <div data-produtos-grid data-so-ofertas data-limite="8">
+        <p class="lead">Carregando ofertas…</p>
+      </div>
+      <div style="margin-top:26px;text-align:center;">
+        <a class="btn btn-solid" href="ofertas.html">Ver todas as ofertas</a>
+        <a class="btn btn-ghost" href="produtos.html">Ver todos os produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ATALHOS DE CATEGORIA ================= -->
+  <section class="section alt tight">
+    <div class="wrap">
+      <div class="section-head center reveal" style="margin-bottom:26px;">
+        <span class="eyebrow">Compre por categoria</span>
+        <h2 class="section-title">O que você precisa hoje?</h2>
+      </div>
+      <div class="cat-atalhos reveal">
+        <a class="cat-atalho" href="produtos.html?cat=Hortifruti"><span class="emoji">🥬</span>Hortifruti</a>
+        <a class="cat-atalho" href="produtos.html?cat=Açougue"><span class="emoji">🥩</span>Açougue</a>
+        <a class="cat-atalho" href="produtos.html?cat=Frios e Laticínios"><span class="emoji">🥛</span>Frios e Laticínios</a>
+        <a class="cat-atalho" href="produtos.html?cat=Padaria"><span class="emoji">🥖</span>Padaria</a>
+        <a class="cat-atalho" href="produtos.html?cat=Mercearia"><span class="emoji">🛒</span>Mercearia</a>
+        <a class="cat-atalho" href="produtos.html?cat=Bebidas"><span class="emoji">🥤</span>Bebidas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CADASTRE-SE PARA RECEBER OFERTAS ================= -->
+  <section class="section tight" id="receber-ofertas">
+    <div class="wrap">
+      <div class="cadastro-box reveal">
+        <div>
+          <h2>📣 Cadastre-se para receber ofertas</h2>
+          <p>Receba os folhetos da semana em primeira mão, direto no seu WhatsApp:
+             Terça Hortifruti, Quarta das Carnes e o Fim de Semana da Economia.</p>
+        </div>
+        <div class="acoes">
+          <a class="btn btn-zap" href="#" data-config-link="whatsapp"
+             data-whatsapp-text="Olá! Quero me cadastrar para receber as ofertas da semana do Opção Supermercado. 🛒"
+             rel="noopener" target="_blank">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.5c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.2 1.1 1.1-4-.3-.4a10 10 0 1 1 8.8 4.9z"/></svg>
+            Quero receber no WhatsApp
+          </a>
+          <p class="dica">É grátis. Basta enviar a mensagem que já aparece pronta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMO PEDIR ================= -->
+  <section class="section alt">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Simples assim</span>
+        <h2 class="section-title">Como fazer seu pedido</h2>
+        <p class="lead">Em 3 passos você faz sua compra sem sair de casa.</p>
+      </div>
+      <div class="features">
+        <div class="feature reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3h2l2.5 13.5A2 2 0 0 0 9.5 18h8a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg></div>
+          <h3>1. Escolha os produtos</h3>
+          <p>Navegue pelas ofertas e categorias, e toque em <strong>“+ Adicionar”</strong> no que quiser levar.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>2. Envie pelo WhatsApp</h3>
+          <p>Preencha nome e endereço no carrinho e o pedido vai prontinho pra gente pelo WhatsApp.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+          <h3>3. Receba em casa</h3>
+          <p>Confirmamos o valor e a forma de pagamento (PIX, cartão ou dinheiro) e levamos até você.</p>
+        </div>
+      </div>
+      <div style="margin-top:30px;text-align:center;">
+        <a class="btn btn-solid" href="produtos.html">Começar minha compra</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NOSSA LOJA ================= -->
+  <section class="section" id="loja">
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <span class="eyebrow">Nossa loja</span>
+          <h2 class="section-title">Perto de você, todos os dias</h2>
+          <div class="contact-card" style="margin-top:22px;">
+            <div class="row">
+              <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><strong>Endereço</strong><br><span data-config="endereco">Avenida Frei Estevão, 567 — Bairro Cidade Nova</span></div>
+            </div>
+            <div class="row">
+              <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div><strong>Horário</strong><br><span data-config="horario">Todos os dias, das 7h às 20h</span></div>
+            </div>
+            <div class="row">
+              <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 10h18M7 15h4M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg></div>
+              <div><strong>Formas de pagamento</strong><br><span data-config="formasDePagamento">Cartões, cartão alimentação, PIX e dinheiro</span></div>
+            </div>
+          </div>
+          <div class="hero-cta" style="justify-content:flex-start;margin-top:22px;">
+            <a class="btn btn-zap" href="#" data-config-link="whatsapp" rel="noopener" target="_blank">Chamar no WhatsApp</a>
+            <a class="btn btn-ghost" href="contato.html">Ver no mapa</a>
+          </div>
+        </div>
+        <div class="media reveal">
+          <iframe class="embed-frame mapa" title="Mapa da loja" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Avenida%20Frei%20Estev%C3%A3o%20567%20Cidade%20Nova&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="index.html"><span class="logo"><img src="assets/img/logo.png" alt="" width="21" height="21"></span> Opção Supermercado</a>
+          <p><span data-config="endereco">Avenida Frei Estevão, 567 — Bairro Cidade Nova</span></p>
+          <p>WhatsApp: <a href="#" data-config-link="whatsapp" rel="noopener" target="_blank">(38) 99944-6404</a></p>
+        </div>
+        <div>
+          <h5>Navegue</h5>
+          <ul>
+            <li><a href="ofertas.html">Ofertas da semana</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="index.html#receber-ofertas">Receber ofertas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Fale com a gente</h5>
+          <ul>
+            <li><a href="#" data-config-link="whatsapp" rel="noopener" target="_blank">WhatsApp</a></li>
+            <li><a href="#" data-config-link="instagram" rel="noopener" target="_blank">Instagram</a></li>
+            <li><a href="#" data-config-link="facebook" rel="noopener" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-row">
+        <a class="social-icon zap" href="#" data-config-link="whatsapp" rel="noopener" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.5c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.2 1.1 1.1-4-.3-.4a10 10 0 1 1 8.8 4.9z"/></svg></a>
+        <a class="social-icon ig" href="#" data-config-link="instagram" rel="noopener" target="_blank" aria-label="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+        <a class="social-icon fb" href="#" data-config-link="facebook" rel="noopener" target="_blank" aria-label="Facebook"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+      </div>
+      <div class="alerta-golpe">
+        ⚠️ <strong>Cuidado com golpes:</strong> nosso único WhatsApp oficial é o <a href="#" data-config-link="whatsapp" rel="noopener" target="_blank">(38) 99944-6404</a>. Nunca pedimos pagamento por outros números ou links estranhos.
+      </div>
+      <div class="legal">
+        © <span id="year"></span> Opção Supermercado — Cidade Nova.
+        <div class="disclaimer">A venda de bebidas alcoólicas é proibida para menores de 18 anos.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/conteudo-padrao.js?v=2"></script>
+  <script src="assets/js/conteudo.js?v=2"></script>
+  <script src="assets/js/produtos.js?v=2"></script>
+  <script src="assets/js/carrinho.js?v=2"></script>
+</body>
+</html>
