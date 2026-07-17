@@ -1,0 +1,72 @@
+﻿Categoria,Nome,Detalhe,Preço,Unidade,Preço antigo,Em oferta,Imagem,Disponível
+Hortifruti,Tomate Extra,,"5,99",kg,,SIM,assets/img/produtos/tomate-extra.jpg,SIM
+Hortifruti,Batata Inglesa,,"5,89",kg,,SIM,assets/img/produtos/batata-inglesa.jpg,SIM
+Hortifruti,Cenoura,,"5,99",kg,,SIM,assets/img/produtos/cenoura.jpg,SIM
+Hortifruti,Alface Crespa,unidade,"3,99",un,,SIM,assets/img/produtos/alface-crespa.jpg,SIM
+Hortifruti,Banana Prata,,"4,99",kg,,,assets/img/produtos/banana-prata.jpg,SIM
+Hortifruti,Banana Nanica,,"3,99",kg,,,assets/img/produtos/banana-nanica.jpg,SIM
+Hortifruti,Banana Maçã,,"7,19",kg,,,assets/img/produtos/banana-maca.jpg,SIM
+Hortifruti,Maçã Gala,,"7,19",kg,,,assets/img/produtos/maca-gala.jpg,SIM
+Hortifruti,Laranja,,"2,95",kg,,,assets/img/produtos/laranja.jpg,SIM
+Hortifruti,Abacaxi Pérola,extra G,"8,99",kg,,,assets/img/produtos/abacaxi-perola.jpg,SIM
+Hortifruti,Chuchu,,"4,89",kg,,,assets/img/produtos/chuchu.jpg,SIM
+Hortifruti,Pimentão Verde,,"6,99",kg,,,assets/img/produtos/pimentao-verde.jpg,SIM
+Hortifruti,Couve Manteiga,maço,"3,99",un,,,assets/img/produtos/couve-manteiga.jpg,SIM
+Hortifruti,Cheiro Verde,maço,"3,99",un,,,assets/img/produtos/cheiro-verde.jpg,SIM
+Hortifruti,Cebola Extra,,"6,69",kg,,,assets/img/produtos/cebola-extra.jpg,SIM
+Hortifruti,Abóbora Cabotiá,,"3,69",kg,,,assets/img/produtos/abobora-cabotia.jpg,SIM
+Hortifruti,Abobrinha Verde,,"5,99",kg,,,assets/img/produtos/abobrinha-verde.jpg,SIM
+Hortifruti,Repolho Verde,,"4,99",kg,,,assets/img/produtos/repolho-verde.jpg,SIM
+Hortifruti,Pimenta de Cheiro,bandeja,"2,99",un,,,assets/img/produtos/pimenta-de-cheiro.jpg,SIM
+Hortifruti,Gengibre,bandeja,"5,99",un,,,assets/img/produtos/gengibre.jpg,SIM
+Hortifruti,Mandioca com Casca,,"4,49",kg,,,assets/img/produtos/mandioca.jpg,SIM
+Açougue,Costela Bovina,,"19,95",kg,,SIM,assets/img/produtos/costela-bovina.jpg,SIM
+Açougue,Paleta Bovina,,"33,90",kg,,,assets/img/produtos/paleta-bovina.jpg,SIM
+Açougue,Patinho Bovino,,"37,95",kg,,SIM,assets/img/produtos/patinho-bovino.jpg,SIM
+Açougue,Almôndegas Bovinas,,"23,90",kg,,,assets/img/produtos/almondegas-bovinas.jpg,SIM
+Açougue,Músculo Bovino,,"28,90",kg,,,assets/img/produtos/musculo-bovino.jpg,SIM
+Açougue,Retalho Bovino,,"21,90",kg,,,assets/img/produtos/retalho-bovino.jpg,SIM
+Açougue,Coxão Mole,,"43,95",kg,,SIM,assets/img/produtos/coxao-mole.jpg,SIM
+Açougue,Coxão Duro,,"43,95",kg,,SIM,assets/img/produtos/coxao-duro.jpg,SIM
+Açougue,Contra Filé,,"49,95",kg,,SIM,assets/img/produtos/contra-file.jpg,SIM
+Açougue,Alcatra,,"49,95",kg,,SIM,assets/img/produtos/alcatra.jpg,SIM
+Açougue,Costelão Bovino,,"22,90",kg,,,assets/img/produtos/costelao-bovino.jpg,SIM
+Açougue,Pescoço Bovino,,"28,90",kg,,,assets/img/produtos/pescoco-bovino.jpg,SIM
+Açougue,Acém,,"33,90",kg,,,assets/img/produtos/acem.jpg,SIM
+Açougue,Linguiça Fina Suína,,"26,90",kg,,,assets/img/produtos/linguica-fina-suina.jpg,SIM
+Açougue,Linguiça Mista,,"12,90",kg,,,assets/img/produtos/linguica-mista.jpg,SIM
+Açougue,Chambaril Suíno,,"12,99",kg,,,assets/img/produtos/chambaril-suino.jpg,SIM
+Açougue,Bisteca Suína,,"17,99",kg,,,assets/img/produtos/bisteca-suina.jpg,SIM
+Açougue,Pernil Suíno,,"23,90",kg,,,assets/img/produtos/pernil-suino.jpg,SIM
+Açougue,Frango Caipirão Paraíso,,"24,90",kg,,,assets/img/produtos/frango-caipirao.jpg,SIM
+Açougue,Hambúrguer Artesanal,de costela,"26,90",kg,,,assets/img/produtos/hamburguer-artesanal.jpg,SIM
+Frios e Laticínios,Leite da Fazenda,garrafa 2L,"8,99",un,,,assets/img/produtos/leite-fresco-2l.jpg,SIM
+Frios e Laticínios,Leite UHT Triângulo,integral 1L,"6,25",un,,,assets/img/produtos/leite-uht-triangulo.jpg,SIM
+Frios e Laticínios,Leite Condensado Triângulo,semidesnatado 395g,"6,29",un,,,assets/img/produtos/leite-condensado.jpg,SIM
+Frios e Laticínios,Queijo Fresco,unidade,"15,00",un,,,assets/img/produtos/queijo-fresco.jpg,SIM
+Frios e Laticínios,Ovos Brancos,cartela com 30,"18,95",un,,,assets/img/produtos/ovos-brancos.jpg,SIM
+Frios e Laticínios,Ovos Caipira,cartela com 30,"32,99",un,,,assets/img/produtos/ovos-caipira.jpg,SIM
+Frios e Laticínios,Ovos de Codorna,cartela com 30,"6,99",un,,,assets/img/produtos/ovos-codorna.jpg,SIM
+Frios e Laticínios,Chocomil,200ml,"1,25",un,,,assets/img/produtos/chocomil.jpg,SIM
+Padaria,Pão de Sal,,"14,99",kg,,,assets/img/produtos/pao-de-sal.jpg,SIM
+Padaria,Pão de Forma Pullman,tradicional 400g,"8,95",un,,,assets/img/produtos/pao-forma-pullman.jpg,SIM
+Padaria,Bisnaguito Pullman,300g,"8,99",un,,,assets/img/produtos/bisnaguito-pullman.jpg,SIM
+Padaria,Pão de Alho Mencuccini,300g,"9,95",un,,,assets/img/produtos/pao-de-alho.jpg,SIM
+Mercearia,Café Unaí,pacote 250g,"12,45",un,,SIM,assets/img/produtos/cafe-unai.jpg,SIM
+Mercearia,Rosquinhas de Coco Mabel,600g,"7,95",un,,SIM,assets/img/produtos/rosquinhas-mabel.jpg,SIM
+Mercearia,Rosquinha Rancheiro,500g,"8,25",un,,,assets/img/produtos/rosquinha-rancheiro.jpg,SIM
+Mercearia,Biscoito Recheado Show Gol,"76g, sabores","1,95",un,,SIM,assets/img/produtos/biscoito-show-gol.jpg,SIM
+Mercearia,Molho de Tomate Fugini,tradicional 300g,"1,99",un,,,assets/img/produtos/molho-fugini.jpg,SIM
+Mercearia,Batata Congelada Bem Brasil,2kg,"24,95",un,,,assets/img/produtos/batata-bem-brasil.jpg,SIM
+Bebidas,Coca-Cola,2L,"10,49",un,,,assets/img/produtos/coca-cola-2l.jpg,SIM
+Bebidas,Guaraná Kuat,"1,5L","3,95",un,,,assets/img/produtos/guarana-kuat.jpg,SIM
+Bebidas,Fanta e Sprite,"1,5L, sabores","5,95",un,,,assets/img/produtos/fanta-sprite.jpg,SIM
+Bebidas,Suco Tial,"1L, sabores","6,45",un,,SIM,assets/img/produtos/suco-tial.jpg,SIM
+Bebidas,Cerveja Brahma,caixa 12x350ml,"43,95",un,,SIM,assets/img/produtos/cerveja-brahma-cx.jpg,SIM
+Bebidas,Cerveja Antarctica,"269ml, caixa c/ 15","44,90",un,,,assets/img/produtos/cerveja-antarctica-cx15.jpg,SIM
+Bebidas,Cerveja Antarctica Litrinho,retornável,"2,95",un,,,assets/img/produtos/antarctica-litrinho.jpg,SIM
+Higiene e Limpeza,Papel Higiênico Paloma,"neutro, 4 rolos 30m","3,69",un,,SIM,assets/img/produtos/papel-paloma.jpg,SIM
+Higiene e Limpeza,Papel Higiênico Sublime,4 rolos 30m,"4,49",un,,,assets/img/produtos/papel-sublime.jpg,SIM
+Higiene e Limpeza,Papel Higiênico Stylus,12 rolos 20m,"12,99",un,,,assets/img/produtos/papel-stylus.jpg,SIM
+Higiene e Limpeza,Sabão em Pó Tixan Ypê,primavera 800g,"13,99",un,,,assets/img/produtos/sabao-tixan.jpg,SIM
+Higiene e Limpeza,Multiuso Veja Gold,500ml,"3,99",un,,,assets/img/produtos/veja-gold.jpg,SIM

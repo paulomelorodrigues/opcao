@@ -17,12 +17,24 @@
     return String(t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
+  // Indisponível = coluna "Disponível" marcada como NÃO/N. O produto continua
+  // no site (aparece como "Fora de estoque"), só não pode ir para o carrinho.
+  function indisponivel(p) {
+    var v = String(p.disponivel == null ? "" : p.disponivel).trim().toUpperCase();
+    return v === "NÃO" || v === "NAO" || v === "N";
+  }
+
+  // Ícone (emoji) de cada categoria — deixa os filtros mais visuais.
+  var ICONES = {
+    "hortifruti": "🥬", "acougue": "🥩", "frios e laticinios": "🥛",
+    "padaria": "🥖", "mercearia": "🛒", "bebidas": "🥤",
+    "higiene e limpeza": "🧽", "limpeza": "🧽", "higiene": "🧴"
+  };
+  function iconeCategoria(cat) { return ICONES[chave(cat)] || "🛒"; }
+
   function normalizar(lista) {
     return (lista || [])
-      .filter(function (p) {
-        return p.nome && String(p.disponivel || "SIM").trim().toUpperCase() !== "NÃO" &&
-               String(p.disponivel || "SIM").trim().toUpperCase() !== "NAO";
-      })
+      .filter(function (p) { return p.nome; })
       .map(function (p) {
         return {
           id: chave(p.categoria + "|" + p.nome + "|" + (p.detalhe || "")).replace(/[^a-z0-9|]+/g, "-"),
@@ -33,6 +45,7 @@
           precoCent: parsePreco(p.preco),
           precoAntigoCent: parsePreco(p.precoAntigo),
           emOferta: String(p.emOferta || "").trim().toUpperCase() === "SIM",
+          disponivel: !indisponivel(p),
           imagem: p.imagem || "",
           textoBusca: chave(p.nome + " " + (p.detalhe || "") + " " + (p.categoria || ""))
         };
@@ -42,6 +55,11 @@
   /* ------------------------------------------------- Célula "adicionar" */
   function renderAcao(cont, p) {
     cont.textContent = "";
+    if (!p.disponivel) {
+      var aviso = el("span", "btn-indisponivel", "Fora de estoque");
+      cont.appendChild(aviso);
+      return;
+    }
     if (p.precoCent == null) {
       var pill = el("span", "pill", "Consulte na loja");
       cont.appendChild(pill);
@@ -70,9 +88,11 @@
   }
 
   function cardProduto(p) {
-    var card = el("article", "produto-card" + (p.emOferta ? " em-oferta" : ""));
+    var card = el("article", "produto-card" +
+      (p.emOferta ? " em-oferta" : "") + (p.disponivel ? "" : " indisponivel"));
     card.setAttribute("data-produto-id", p.id);
-    if (p.emOferta) card.appendChild(el("span", "selo-oferta", "OFERTA"));
+    if (!p.disponivel) card.appendChild(el("span", "selo-esgotado", "Fora de estoque"));
+    else if (p.emOferta) card.appendChild(el("span", "selo-oferta", "OFERTA"));
 
     var img = el("img", "foto");
     img.src = urlImagem(p.imagem, 400) || "assets/img/placeholder-produto.svg";
@@ -105,7 +125,8 @@
   function filtrar(grid) {
     var lista = produtos;
     if (grid.hasAttribute("data-so-ofertas")) {
-      lista = lista.filter(function (p) { return p.emOferta; });
+      // Nas vitrines de oferta (home/ofertas) só entram itens disponíveis.
+      lista = lista.filter(function (p) { return p.emOferta && p.disponivel; });
     }
     if (categoria) {
       lista = lista.filter(function (p) { return p.categoria === categoria; });
@@ -114,6 +135,10 @@
       var q = chave(busca);
       lista = lista.filter(function (p) { return p.textoBusca.indexOf(q) !== -1; });
     }
+    // Disponíveis primeiro; indisponíveis vão para o fim da lista.
+    lista = lista.slice().sort(function (a, b) {
+      return (a.disponivel === b.disponivel) ? 0 : (a.disponivel ? -1 : 1);
+    });
     var limite = +grid.getAttribute("data-limite") || Infinity;
     return lista.slice(0, limite);
   }
@@ -143,13 +168,17 @@
         if (cats.indexOf(p.categoria) === -1) cats.push(p.categoria);
       });
       c.textContent = "";
-      var todas = el("button", "chip" + (categoria ? "" : " ativa"), "Todos");
+      var todas = el("button", "chip" + (categoria ? "" : " ativa"));
       todas.type = "button";
+      todas.appendChild(el("span", "chip-ic", "🏠"));
+      todas.appendChild(el("span", null, "Todos"));
       todas.onclick = function () { categoria = ""; renderChips(); renderGrades(); };
       c.appendChild(todas);
       cats.forEach(function (cat) {
-        var chip = el("button", "chip" + (cat === categoria ? " ativa" : ""), cat);
+        var chip = el("button", "chip" + (cat === categoria ? " ativa" : ""));
         chip.type = "button";
+        chip.appendChild(el("span", "chip-ic", iconeCategoria(cat)));
+        chip.appendChild(el("span", null, cat));
         chip.onclick = function () {
           categoria = (categoria === cat) ? "" : cat;
           renderChips();
